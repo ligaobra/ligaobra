@@ -8,7 +8,7 @@ export default function HomePage() {
 return (
   <div
     className="min-h-screen bg-cover bg-center flex flex-col items-start justify-start px-4 py-8"
-    style={{ backgroundImage: "url('/images/obra-fundo.jpg')" }}
+   style={{ backgroundImage: "url('/images/fundo.png')" }}
   >
     {/* Logomarca */}
     <div className="flex items-center space-x-4 mb-6 ml-4">
