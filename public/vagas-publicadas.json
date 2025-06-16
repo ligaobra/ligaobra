@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "titulo": "Pedreiro",
+    "descricao": "Trabalhar em obra de médio porte.",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "salario": "R$ 2.500,00"
+  },
+  {
+    "id": "2",
+    "titulo": "Servente",
+    "descricao": "Auxiliar na limpeza e organização.",
+    "cidade": "Campinas",
+    "estado": "SP",
+    "salario": "R$ 1.800,00"
+  }
+]

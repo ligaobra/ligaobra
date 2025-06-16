@@ -1,0 +1,18 @@
+[
+    {
+      "id": "123",
+      "nomeEmpresa": "ConstruService Ltda",
+      "tipoServico": "Elétrica",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "site": "https://construservice.com.br",
+      "instagram": "@construservice",
+      "whatsapp": "(11) 91234-5678",
+      "historico": [
+        "Cadastrado na plataforma",
+        "Atualizou o perfil",
+        "Indicou outro prestador"
+      ]
+    }
+  ]
+  

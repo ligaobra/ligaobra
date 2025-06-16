@@ -1,0 +1,40 @@
+import { NextResponse } from 'next/server';
+import { promises as fs } from 'fs';
+import path from 'path';
+
+const filePath = path.resolve(process.cwd(), 'data/prestadores.json');
+
+interface Prestador {
+  id: string;
+  nomeEmpresa: string;
+  cnpj: string;
+  tipoServico: string;
+  email: string;
+  telefone: string;
+  cidade: string;
+  estado: string;
+  atendeOutrasRegioes: boolean;
+  site?: string;
+  instagram?: string;
+  whatsapp?: string;
+}
+
+export async function POST(request: Request) {
+  const novoPrestador: Prestador = await request.json();
+
+  const conteudo = await fs.readFile(filePath, 'utf-8');
+  const prestadores: Prestador[] = JSON.parse(conteudo);
+
+  prestadores.push(novoPrestador);
+
+  await fs.writeFile(filePath, JSON.stringify(prestadores, null, 2));
+
+  return NextResponse.json({ message: 'Prestador cadastrado com sucesso!' });
+}
+
+export async function GET() {
+  const conteudo = await fs.readFile(filePath, 'utf-8');
+  const prestadores: Prestador[] = JSON.parse(conteudo);
+
+  return NextResponse.json(prestadores);
+}

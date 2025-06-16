@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "nome": "Jonas da Silva",
+    "email": "jonas.silva@example.com",
+    "telefone": "(11) 90000-0000",
+    "cidade": "Campinas",
+    "estado": "SP",
+    "cpfOuCnpj": "123.456.789-00",
+    "senha": "123456"
+  }
+]

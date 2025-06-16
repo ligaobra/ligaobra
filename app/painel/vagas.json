@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1746560114030",
+    "titulo": "Operador de Retroescavadeira Atualizado",
+    "cidade": "Campo Grande",
+    "estado": "MS",
+    "tipoContrato": "CLT",
+    "faixaSalarial": "A combinar",
+    "inicioPrevisto": "Imediato",
+    "descricao": "Descri��o atualizada com caracteres especiais: �, �, �, �, �."
+  },
+  {
+    "id": "1746730142560",
+    "titulo": "Pedreiro",
+    "cidade": "Abadiânia",
+    "estado": "GO",
+    "tipoContrato": "CLT",
+    "faixaSalarial": "A combinar",
+    "inicioPrevisto": "Imediato",
+    "descricao": "Assentamento de pisos cerâmicos."
+  },
+  {
+    "id": "1746733452059",
+    "titulo": "Operador de Retroescavadeira",
+    "cidade": "Campo Grande",
+    "estado": "MS",
+    "tipoContrato": "CLT",
+    "faixaSalarial": "A combinar",
+    "inicioPrevisto": "Imediato",
+    "descricao": "Com certificado válido."
+  }
+]

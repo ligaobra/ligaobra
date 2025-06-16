@@ -1,0 +1,15 @@
+[
+  {
+    "id": "123",
+    "nomeEmpresa": "Construtora Sorela",
+    "tipoServico": "Construção civil.",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "site": "https://sorela.com.br",
+    "instagram": "@sorela",
+    "whatsapp": "11-909009999",
+    "historico": [
+      "Atualização realizada em: 15/05/2025, 16:38:15"
+    ]
+  }
+]

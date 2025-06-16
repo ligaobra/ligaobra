@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "José da Silva",
+    "cpf": "12345678900",
+    "senha": "1234",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "email": "jose@email.com",
+    "telefone": "11999999999",
+    "profissao": "Pedreiro"
+  }
+]

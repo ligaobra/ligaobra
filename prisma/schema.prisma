@@ -1,0 +1,69 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = "file:./database.db"
+}
+
+model construtora {
+    id     String @id @default(cuid())
+    nome   String
+    cnpj   String @unique
+    senha  String
+    email  String
+    cidade String
+    estado String
+    vaga   vaga[]
+}
+
+model trabalhador {
+    id        String   @id @default(cuid())
+    nome      String
+    cpf       String   @unique
+    senha     String
+    cidade    String
+    estado    String
+    telefone  String
+    email     String
+    instagram String
+    profissao String
+    createdAt DateTime @default(now())
+}
+
+model prestador {
+    id          String   @id @default(cuid())
+    nome        String
+    tipoServico String
+    segmento    String
+    cnpj        String   @unique
+    senha       String
+    cidade      String
+    estado      String
+    whatsapp    String
+    instagram   String
+    site        String
+    email       String
+    indicacaoDe String? // opcional
+    createdAt   DateTime @default(now())
+    vaga        vaga[]
+}
+
+model vaga {
+    id             String   @id @default(cuid())
+    titulo         String
+    descricao      String
+    cidade         String
+    estado         String
+    tipoContrato   String
+    faixaSalarial  String
+    inicioPrevisto String
+    createdAt      DateTime @default(now())
+
+    construtoraId String?
+    prestadorId   String?
+
+    construtora construtora? @relation(fields: [construtoraId], references: [id])
+    prestador   prestador?   @relation(fields: [prestadorId], references: [id])
+}
